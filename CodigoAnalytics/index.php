@@ -1,7 +1,16 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
-    
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-143612291-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-143612291-1');
+</script>
+
     <meta charset="utf-8">
     <!-- Responsive -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -21,10 +30,10 @@
 
   </head>
   <body>
-    
+
       <header>
         <nav class="navbar container navbar-expand-lg navbar-light p-0 p-lg-3">
-              <a class="navbar-brand" href="https://www.cross373.com.br">
+              <a class="navbar-brand" href="http://localhost/webAnalytics-master/CodigoAnalytics">
                 <img src="img/logo-cross373-fav.jpeg" alt="Logo do Cross373 - crosstraining" class="navbar-brand" width="100"/>
               </a>
               <button class="navbar-toggler mr-3" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Alterna navegação">
@@ -34,7 +43,7 @@
                 <!-- Lado Esquerdo do Menu -->
                 <ul class="navbar-nav mr-auto p-3 p-lg-0">
                   <li class="nav-item active">
-                    <a class="nav-link" href="https://www.cross373.com.br">Home <span class="sr-only">(Página atual)</span></a>
+                    <a class="nav-link" href="http://localhost/webAnalytics-master/CodigoAnalytics">Home <span class="sr-only">(Página atual)</span></a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" href="#categorias">A Cross373</a>
@@ -43,10 +52,10 @@
                     <a class="nav-link" href="#crosstraining">Sobre Crosstraining</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="https://www.cross373.com.br/contato.php">Dúvidas?!</a>
+                    <a class="nav-link" href="http://localhost/webAnalytics-master/CodigoAnalytics/contato.php">Dúvidas?!</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="https://www.cross373.com.br/contato.php">Quer ganhar uma aula grátis?</a>
+                    <a class="nav-link" href="http://localhost/webAnalytics-master/CodigoAnalytics/contato.php">Quer ganhar uma aula grátis?</a>
                   </li>
                 </ul>
                 <!-- Lado Direito do Menu (icones contato/social) -->
@@ -79,7 +88,7 @@
                           <h2><strong>Cansou das academias? <br> Não consegue encontrar seu ritmo?</strong></h2>
 
                           <h3 class=" d-none d-md-block">Aqui é onde tudo vai mudar!</h3>
-                          <a href="https://www.cross373.com.br/contato.php" class="btn btn-light mt-2"><strong>Agende uma aula grátis!</strong></a>
+                          <a href="http://localhost/webAnalytics-master/CodigoAnalytics/contato.php" class="btn btn-light mt-2"><strong>Agende uma aula grátis!</strong></a>
                         </div>
                       </div>
                       <div class="carousel-item active">
@@ -88,7 +97,7 @@
                           <h2><strong>Cross 373</strong></h2>
 
                           <h3 class=" ">Acha que Cross não é pra você? <br> Vamos mudar essa ideia!</h3>
-                          <a href="https://www.cross373.com.br/contato.php" class="btn btn-light mt-2"><strong>Agende uma aula grátis!</strong></a>
+                          <a href="http://localhost/webAnalytics-master/CodigoAnalytics/contato.php" class="btn btn-light mt-2"><strong>Agende uma aula grátis!</strong></a>
                         </div>
                       </div>
                       <div class="carousel-item">
@@ -96,7 +105,7 @@
                         <div class="carousel-caption rounded bg-dark">
                           <h2><strong>Quer algo diferente e desafiador?</strong></h2>
                           <h3 class=" d-none d-md-block">Vem conhecer e entender por que a gente funciona!</h3>
-                          <a href="https://www.cross373.com.br/contato.php" class="btn btn-light mt-2"><strong>Agende uma aula grátis!</strong></a>
+                          <a href="http://localhost/webAnalytics-master/CodigoAnalytics/contato.php" class="btn btn-light mt-2"><strong>Agende uma aula grátis!</strong></a>
                         </div>
                       </div>
                     </div>
@@ -160,7 +169,7 @@
                         <h3 class="">Somos especializados em Crosstraining!</h3>
                         Não adianta estar em uma academia com uma grade de horários variada, mas nenhuma aula ser o que você precisa. Aqui somos <strong> especializados em Crosstraining!</strong> Isso significa que aqui você vai encontrar treinos que dão resultado e com uma equipe certificada e pronta pra te atender!
                         <br>
-                        <a href="https://www.cross373.com.br/contato.php" class="btn btn-dark mt-3">Agende sua aula grátis</a>
+                        <a href="http://localhost/webAnalytics-master/CodigoAnalytics/contato.php" class="btn btn-dark mt-3">Agende sua aula grátis</a>
                       </div>
                   </div>
                 </div>
@@ -173,7 +182,7 @@
                       <div class="media-body m-3 txt-categorias align-self-center">
                         <h3 class="">E especialistas em Resultado!</h3>
                         Exatamente por trabalharmos exclusivamente com o Crosstraining e Treinamento Funcional, garantimos treinos dinâmicos, divertidos e baseados nas capacidades físicas que precisamos pra nossa rotina real. Seja o seu objetivo emagrecer, definir, melhorar o condicionamento, ou simplesmente qualidade de vida, temos o treino perfeito para você! <br>
-                        <a href="https://www.cross373.com.br/contato.php" class="btn btn-dark align-self-center mt-3">Agende sua aula grátis</a>
+                        <a href="http://localhost/webAnalytics-master/CodigoAnalytics/contato.php" class="btn btn-dark align-self-center mt-3">Agende sua aula grátis</a>
                       </div>
                   </div>
                 </div>
@@ -186,7 +195,7 @@
                       <div class="media-body m-3 txt-categorias align-self-center">
                         <h3 class="">Chega de academia!</h3>
                         Aquele treino de musculação que conhecemos muito bem não tem vez aqui! Os treinos são diferentes todos os dias, além de sempre serem montados pensando em diversão, superação e resultado! Sim, é possível se divertir enquanto se exercita! Não acredita? Vem aqui e deixa a gente te provar!<br>
-                        <a href="https://www.cross373.com.br/contato.php" class="btn btn-dark align-self-center mt-3">Agende sua aula grátis</a>
+                        <a href="http://localhost/webAnalytics-master/CodigoAnalytics/contato.php" class="btn btn-dark align-self-center mt-3">Agende sua aula grátis</a>
                       </div>
                   </div>
                 </div>
@@ -199,7 +208,7 @@
                       <div class="media-body m-3 txt-categorias align-self-center">
                         <h3 class="">Treino que dura horas? Não mais!</h3>
                         30 minutos na esteira (ou bicicleta), depois pegar a ficha de treino e revezar aparelhos com mais outras pessoas. Sair da academia 3 horas depois, com a sensação que não se exercitou de verdade. Se essa rotina sempre te desanimou, temos uma novidade: aqui você não reveza aparelhos e, após 55 minutos, sai com a sensação de resultado. É ou não é o que você está procurando? <br>
-                        <a href="https://www.cross373.com.br/contato.php" class="btn btn-dark align-self-center mt-3">Agende sua aula grátis</a>
+                        <a href="http://localhost/webAnalytics-master/CodigoAnalytics/contato.php" class="btn btn-dark align-self-center mt-3">Agende sua aula grátis</a>
                       </div>
                   </div>
                 </div>
@@ -217,7 +226,7 @@
             <hr>
             <p class="sobre-crosstraining-texto">Crosstraining é uma modalidade de alta intensidade e variação constante de exercícios, com treinos dinâmicos, alta queima calórica e definição muscular.</p>
             <p class="sobre-crosstraining-texto">O Cross traz benefícios físicos, como melhora de condicionamento, força física, equilíbrio, flexibilidade, perda de gordura, além de reduzir stress, melhorar sua confiança e auto estima!</p>
-            <a href="https://www.cross373.com.br/contato.php" class="btn btn-light mt-2"><strong>Agende sua aula grátis!</strong></a>
+            <a href="http://localhost/webAnalytics-master/CodigoAnalytics/contato.php" class="btn btn-light mt-2"><strong>Agende sua aula grátis!</strong></a>
           </div>
         </div>
         <!-- Fim do Sobre Crosstraining -->
@@ -239,7 +248,7 @@
             <p class="sobre-crosstraining-texto">Crosstraining é uma modalidade de alta intensidade e variação constante de exercícios, com treinos dinâmicos, alta queima calórica e definição muscular.</p>
             <p class="sobre-crosstraining-texto">O Cross traz benefícios físicos, como melhora de condicionamento, força física, equilíbrio, flexibilidade, perda de gordura, além de reduzir stress, melhorar sua confiança e auto estima!</p>
             <div class="w-25 m-auto">
-              <a href="https://www.cross373.com.br/contato.php" class="btn btn-dark mt-2"><strong>Agende sua aula grátis!</strong></a>
+              <a href="http://localhost/webAnalytics-master/CodigoAnalytics/contato.php" class="btn btn-dark mt-2"><strong>Agende sua aula grátis!</strong></a>
             </div>
 
           </div>
@@ -288,7 +297,7 @@
                       <a href="#crosstraining">Sobre Crosstraining</a>
                     </p>
                     <p>
-                      <a href="https://www.cross373.com.br/contato.php">Fale com a gente</a>
+                      <a href="http://localhost/webAnalytics-master/CodigoAnalytics/contato.php">Fale com a gente</a>
                     </p>
 
                   </div>
@@ -313,7 +322,7 @@
                 </div>
               </div>
                 <div class="footer-copyright text-center py-3">© 2018 Copyright:
-                  <a href="https://www.cross373.com.br">www.cross373.com.br</a>
+                  <a href="http://localhost/webAnalytics-master/CodigoAnalytics">www.cross373.com.br</a>
                 </div>
       </footer>
 
