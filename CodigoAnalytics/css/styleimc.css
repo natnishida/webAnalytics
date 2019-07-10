@@ -1,0 +1,221 @@
+html, body {
+    background-image: url('../img/elementos-de-academia-crossfit-para-emagrecer.jpg');
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    height: 100vh;
+    color: black;
+    font-family: 'PT+Sans', sans-serif !important;
+    font-weight: 200;
+    margin: 0;
+    padding: 0;
+    align-items: center !important;
+    opacity: 0.95;
+}
+
+h1 {
+  font-size: 2rem!important;
+}
+p{
+  margin-bottom: 0.25rem!important;
+}
+
+.imagem-logo {
+  height: 8vh;
+  margin-bottom: 0;
+  margin-top: 2vh;
+  border-top-left-radius: 50%;
+  border-top-right-radius: 25%;
+}
+
+.texto-imc {
+  font-size: 0.9rem;
+}
+
+section {
+  height: 95vh;
+  background-color: white;
+}
+
+label {
+  color: black;
+  font-size: 1rem;
+}
+
+hr {
+  width: 70px;
+  text-align: center;
+  background: #cc1f34;
+  border: 0;
+  margin: auto !important;
+}
+
+.chamada-imc {
+  color: black;
+  text-align: center;
+  padding-top: 1vh;
+  background-color: white;
+}
+
+.obrigada-imc {
+  padding-top: 5vh;
+}
+
+#inputTelImc {
+  font-size: 0.8rem;
+}
+
+.inputsForm {
+  width: 100%;
+  .color: #29292inputsForm9;
+  font-size: 18px;
+  background-color: #E9E9E9;
+  border: 1px solid #E9E9E9;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  height: 40px!important;
+  border-bottom: 1px solid #ccc;
+  border-left: 1px solid #ccc;
+  text-indent: 20px;
+}
+
+.form-group {
+  margin-bottom: 0.25rem!important;
+}
+
+.formContato {
+  background-color: white;
+}
+
+.texto-email {
+  text-align: center;
+}
+
+.msg-erro-email-imc {
+color: red;
+  }
+
+/* CSS dos radio buttons*/
+/* The container */
+.caixas-radio{
+      width: 25vw;
+
+margin-right: 2px!important;
+}
+
+.container {
+  display: block;
+  position: relative;
+  padding-left: 55px;
+  cursor: pointer;
+  font-size: 10px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  margin-bottom: 0;
+  height: 8vh;
+
+}
+
+/* Hide the browser's default radio button */
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* Create a custom radio button */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 25vw;
+  background-color: #eee;
+  text-align: center;
+  padding: 5px;
+  font-size: 1rem;
+  padding-top: 18%;
+
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When the radio button is checked, add a blue background */
+.container input:checked ~ .checkmark {
+  background-color: #343a40;
+  color: white;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.container input:checked ~ .checkmark:after {
+  display: block;
+
+}
+
+/* Style the indicator (dot/circle) */
+.container .checkmark:after {
+ 	top: 9px;
+	left: 9px;
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	background: white;
+  opacity: 0;
+}
+.container-radios {
+  display: flex;
+  justify-content: center;
+}
+
+.titulo-atividade {
+  text-align: center;
+}
+
+
+@media only screen and (min-width: 992px) {
+.inputsForm {
+  height: 50px!important;
+}
+
+.imagem-logo {
+  margin-top: 1vh;
+}
+
+.checkmark {
+  height: 100%;
+  width: 15vw;
+  background-color: #eee;
+  text-align: center;
+  padding: 5px;
+  font-size: 1rem;
+  padding-top: 10%;
+}
+
+}
+
+@media only screen and (min-width: 768px) {
+
+.checkmark {
+  padding-top: 10%;
+}
+
+}
+
+
+}

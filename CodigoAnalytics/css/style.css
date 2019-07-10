@@ -1,0 +1,277 @@
+html, body {
+    background-color: #fff;
+    color: #636b6f;
+    font-family: 'Dosis', sans-serif !important;
+    font-weight: 200;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    align-items: center !important;
+
+}
+
+h1 {
+  font-size: 2rem !important;
+  text-align:center;
+
+}
+
+hr {
+  width: 70px;
+  text-align: center;
+  background: #cc1f34;
+  border: 0;
+  margin: 10px auto !important;
+}
+
+p {
+  margin: auto;
+}
+
+.container, .container-fluid {
+  padding: 0 !important;
+}
+
+/* Style navbar */
+
+nav {
+  height: 12vh;
+}
+
+.navbar-brand {
+  padding: 0 !important;
+  z-index: 11;
+}
+
+.nav-icones {
+  z-index: 10;
+  justify-content: space-around;
+}
+
+/* Home Mobile */
+
+.home-mobile {
+  background-image: url('../img/crossfit-mulher-saltando-caixa.jpg');
+  background-size: 100%;
+  width: 100%;
+  height: 88vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  color: white;
+  padding-top: 65vh;
+}
+
+
+.home-mobile-div {
+  height: 23vh;
+  opacity: 0.9;
+  text-align: center;
+  font-size: 2rem;
+}
+.home-mobile-div a {
+  color: white;
+  text-decoration: none;
+}
+.chamada-categorias h2, .chamada-categorias h3 {
+  margin: 1%;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+
+.home-mobile-texto {
+  font-size: 1.5rem;
+}
+
+@media (min-width: 992px) {
+nav {
+  height: 12vh;
+}
+
+}
+
+/* Sobre Crosstraining */
+
+.sobre-crosstraining {
+  background-image: url('../img/crossfit-homem-saltando-caixa.jpg');
+  background-size: 100%;
+  width: 100%;
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  color: white;
+  padding-top: 12vh;
+}
+
+
+.sobre-crosstraining-div {
+  height: 85vh;
+  opacity: 0.9;
+  text-align: center;
+  font-size: 2rem;
+}
+.sobre-crosstraining-div a {
+
+  text-decoration: none;
+}
+
+.sobre-crosstraining-texto {
+  font-size: 1.3rem;
+    text-align: center;
+}
+
+.sobre-crosstraining-desktop {
+  background-image: url('../img/crosstraining-desktop.jpg');
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.sobre-crosstraining-titulo {
+  font-size: 2rem;
+    text-align: center;
+}
+@media (min-width: 992px) {
+  .sobre-crosstraining-texto {
+    font-size: 1.4rem;
+
+  }
+
+}
+
+/* Style do menu de diferenciais */
+.chamada-categorias h2, .chamada-categorias h3 {
+  margin: 1%;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.nav-pills {
+  border-radius: 0 !important;
+
+}
+.menu-pills {
+  background-color: #fff;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  opacity: 0.8;
+  color: black;
+  border-radius: 0 !important;
+}
+.nav-pills .active {
+  background-color: #000 !important;
+  color: white;
+}
+.nav-pills .active h5 {
+  color: black;
+}
+.nav-pills a {
+  text-align: center;
+}
+#categorias .nav-item {
+  width: 50%;
+}
+
+.img-categorias {
+  width: 100vw;
+  height: 35vh;
+
+}
+.txt-categorias {
+  font-size: 1rem !important;
+  color: black;
+  display: grid;
+  text-align: center;
+}
+
+@media (min-width: 992px) {
+nav {
+  height: 12vh;
+}
+#categorias .nav-item {
+  width: 25%;
+}
+.img-categorias {
+  width: 30vw;
+  height: 100%;
+}
+}
+
+/* Style do carrossel */
+
+.carousel-caption {
+  opacity: 0.9;
+  width: 40vw !important;
+  margin: 5% auto;
+  padding: 3%;
+}
+
+.carousel-caption h2 {
+  font-size: 2rem;
+}
+
+.carousel-item {
+  height: 88vh;
+}
+
+
+/* Frase de efeito com parallax */
+
+.fraseefeito {
+  background-image: url('../img/bg-academia-crossfit-funcional.jpg');
+  background-size: 100%;
+  width: 100%;
+  height: 15vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  color: white;
+  text-align: center;
+  z-index: 10;
+  padding: 15px 0 0 0;
+}
+
+
+#sobre {
+  font-size: 2.5rem;
+}
+
+/* Style do form */
+
+.form h2 {
+  text-align: center;
+}
+.form ul {
+  list-style-type: none;
+}
+.iframe-form {
+  height: 1000px;
+  background-color: black;
+}
+
+
+/* Style do footer */
+
+.paragrafo-newsletter {
+  text-align:right;
+}
+
+.links-footer a {
+  text-decoration: none;
+  text-align: center;
+  color: #fff !important;
+}
+
+.texto-footer {
+  text-align: center;
+}
+
+/* Msg Erro Form */
+
+.msg-erro {
+  color: red;
+}
