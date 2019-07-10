@@ -1,45 +1,3 @@
-<?php
-if (isset($_POST['BTEnvia'])) {
-
-	//Variaveis de POST, Alterar somente se necessário
-	//====================================================
-	$nome = $_POST['nome'];
-	$email = $_POST['email'];
-	$telefone = $_POST['telefone'];
-	$assunto = $_POST['assunto'];
-	$mensagem = $_POST['mensagem'];
-	//====================================================
-
-	//REMETENTE --> ESTE EMAIL TEM QUE SER VALIDO DO DOMINIO
-	//====================================================
-	$email_remetente = "nat.angel@gmail.com"; // deve ser uma conta de email do seu dominio
-	//====================================================
-
-	//Configurações do email, ajustar conforme necessidade
-	//====================================================
-	$email_destinatario = "nat.angel@gmail.com"; // pode ser qualquer email que receberá as mensagens
-	$email_reply = "$email";
-	$email_assunto = "Contato com Cross373 - $assunto"; // Este será o assunto da mensagem
-	//====================================================
-
-	//Monta o Corpo da Mensagem
-	//====================================================
-	$email_conteudo = "Nome = $nome \n";
-	$email_conteudo .= "Email = $email \n";
-	$email_conteudo .= "Telefone = $telefone \n";
-	$email_conteudo .= "Assunto = $assunto \n";
-	$email_conteudo .= "Mensagem = $mensagem \n";
-	//====================================================
-
-	//Seta os Headers (Alterar somente caso necessario)
-	//====================================================
-	$email_headers = implode ( "\n",array ( "From: $email_remetente", "Reply-To: $email_reply", "Return-Path: $email_remetente","MIME-Version: 1.0","X-Priority: 3","Content-Type: text/html; charset=UTF-8" ) );
-	//====================================================
-	//Enviando o email
-
-}
-?>
-
 <html lang="en" dir="ltr">
   <head>
 
@@ -62,7 +20,7 @@ if (isset($_POST['BTEnvia'])) {
 
   </head>
   <body>
-
+	
       <header>
 
         <nav class="navbar container navbar-expand-lg navbar-light p-0 p-lg-3">
@@ -121,16 +79,11 @@ if (isset($_POST['BTEnvia'])) {
 						 <h1>Você GANHOU uma aula! É GRÁTIS, agende agora!</h1>
 							<?php
 							if (isset($_POST['BTEnvia'])) {
-							if (mail ($email_destinatario, $email_assunto, nl2br($email_conteudo), $email_headers)){
-											echo "<div class='alert alert-success' id='alert-success'>
+												echo "<div class='alert alert-success' id='alert-success'>
 												E-Mail enviado com sucesso!
 														</div>";
-										} else {
-											echo "<div class='alert alert-danger'>
-												Falha no envio dos dados, verifique.
-														</div>";
 										}
-									}
+
 							 ?>
 
 							<form class="formContato" id="formContato" action="contato.php" method="POST">
@@ -164,7 +117,7 @@ if (isset($_POST['BTEnvia'])) {
 
 							<div class="d-flex align-self-center justify-content-center">
 								<input class="btn btn-dark m-3 form-button" type="submit" name="BTEnvia" value="Enviar">
-								<input class="btn btn-dark m-3" type="reset" name="BTApaga" value="Apagar">
+								<input class="btn btn-dark m-3" type="reset" id="btnReset" name="BTApaga" value="Apagar">
 							</div>
 							</form>
 
