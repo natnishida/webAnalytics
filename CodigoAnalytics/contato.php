@@ -12,12 +12,12 @@ if (isset($_POST['BTEnvia'])) {
 
 	//REMETENTE --> ESTE EMAIL TEM QUE SER VALIDO DO DOMINIO
 	//====================================================
-	$email_remetente = "atendimento@cross373.com.br"; // deve ser uma conta de email do seu dominio
+	$email_remetente = "nat.angel@gmail.com"; // deve ser uma conta de email do seu dominio
 	//====================================================
 
 	//Configurações do email, ajustar conforme necessidade
 	//====================================================
-	$email_destinatario = "atendimento@cross373.com.br"; // pode ser qualquer email que receberá as mensagens
+	$email_destinatario = "nat.angel@gmail.com"; // pode ser qualquer email que receberá as mensagens
 	$email_reply = "$email";
 	$email_assunto = "Contato com Cross373 - $assunto"; // Este será o assunto da mensagem
 	//====================================================
@@ -36,34 +36,13 @@ if (isset($_POST['BTEnvia'])) {
 	$email_headers = implode ( "\n",array ( "From: $email_remetente", "Reply-To: $email_reply", "Return-Path: $email_remetente","MIME-Version: 1.0","X-Priority: 3","Content-Type: text/html; charset=UTF-8" ) );
 	//====================================================
 	//Enviando o email
-	//====================================================
-	//Salvando no Mysql
-	//====================================================
-	$servername = "127.0.0.1";
-	$username = "natash28_sistema";
-	$password = "bravus1705";
-	$dbname = "natash28_sistemacross373";
-	$assuntoemail = $assunto." - E-mail";
 
-	// Create connection
-	$conn = mysqli_connect($servername, $username, $password, $dbname);
-	// Check connection
-	if (!$conn) {
-			die("Connection failed: " . mysqli_connect_error());
-	}
-
-	$sql = "INSERT INTO prospects (nome_prospect, meio_contato_prospect, temperatura_prospect, genero_prospect, telefone_prospect, telefone2_prospect, email_prospect, descricao_prospect, consultora_cadastro_prospect, experimental_prospect, consultora_atualizacao)
-	VALUES ('$nome', '$assuntoemail', 'Média', 'Atualizar', '$telefone', '', '$email', '$mensagem', 'Site', 'Não', 'Site')";
-
-	mysqli_query($conn, $sql);
-
-	mysqli_close($conn);
 }
 ?>
 
 <html lang="en" dir="ltr">
   <head>
-		
+
     <meta charset="utf-8">
 		<!-- Responsive -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -83,11 +62,11 @@ if (isset($_POST['BTEnvia'])) {
 
   </head>
   <body>
-			
+
       <header>
 
         <nav class="navbar container navbar-expand-lg navbar-light p-0 p-lg-3">
-              <a class="navbar-brand" href="https://www.cross373.com.br">
+              <a class="navbar-brand" href="http://localhost/webAnalytics-master/CodigoAnalytics">
                 <img src="img/logo-cross373-fav.jpeg" alt="" class="navbar-brand" width="100"/>
               </a>
               <button class="navbar-toggler mr-3" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Alterna navegação">
@@ -97,20 +76,20 @@ if (isset($_POST['BTEnvia'])) {
                 <!-- Lado Esquerdo do Menu -->
                 <ul class="navbar-nav mr-auto p-3 p-lg-0">
                   <li class="nav-item active">
-                    <a class="nav-link" href="https://www.cross373.com.br">Home <span class="sr-only">(Página atual)</span></a>
+                    <a class="nav-link" href="http://localhost/webAnalytics-master/CodigoAnalytics">Home <span class="sr-only">(Página atual)</span></a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="https://www.cross373.com.br/#categorias">A Cross373</a>
+                    <a class="nav-link" href="http://localhost/webAnalytics-master/CodigoAnalytics/#categorias">A Cross373</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="https://www.cross373.com.br/#crosstraining">Sobre Crosstraining</a>
+                    <a class="nav-link" href="http://localhost/webAnalytics-master/CodigoAnalytics/#crosstraining">Sobre Crosstraining</a>
                   </li>
                   <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                       Fale com a gente!
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                      <a class="dropdown-item" href="https://www.cross373.com.br/contato.php">Mande uma mensagem</a>
+                      <a class="dropdown-item" href="http://localhost/webAnalytics-master/CodigoAnalytics/contato.php">Mande uma mensagem</a>
                       <a class="dropdown-item" href="https://api.whatsapp.com/send?phone=5511999000839&text=Gostaria%20de%20saber%20mais%20sobre%20o%20cross" target="_blank" rel="noopener noreferrer">Mande um whatsapp</a>
                       <a class="dropdown-item" href="mailto:atendimento@cross373.com.br?Subject=Contato%20Cross373">Mande um e-mail</a>
                     </div>
@@ -230,13 +209,13 @@ if (isset($_POST['BTEnvia'])) {
 									<h6 class="text-uppercase font-weight-bold">Links úteis</h6>
 									<hr class="bg-light accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
 									<p>
-										<a href="https://www.cross373.com.br/#categorias">Sobre a Cross 373</a>
+										<a href="http://localhost/webAnalytics-master/CodigoAnalytics/#categorias">Sobre a Cross 373</a>
 									</p>
 									<p>
-										<a href="https://www.cross373.com.br/#crosstraining">Sobre Crosstraining</a>
+										<a href="http://localhost/webAnalytics-master/CodigoAnalytics/#crosstraining">Sobre Crosstraining</a>
 									</p>
 									<p>
-										<a href="https://www.cross373.com.br/contato.php">Fale com a gente</a>
+										<a href="http://localhost/webAnalytics-master/CodigoAnalytics/contato.php">Fale com a gente</a>
 									</p>
 
 								</div>
@@ -261,7 +240,7 @@ if (isset($_POST['BTEnvia'])) {
 							</div>
 						</div>
 							<div class="footer-copyright text-center py-3">© 2018 Copyright:
-								<a href="https://www.cross373.com.br">www.cross373.com</a>
+								<a href="http://localhost/webAnalytics-master/CodigoAnalytics">www.cross373.com</a>
 							</div>
 		</footer>
 
